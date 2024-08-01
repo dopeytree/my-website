@@ -1,0 +1,56 @@
+/* Contact (#2) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-01-4a72aa1a"] */
+.slide[data-cid=slide-01-4a72aa1a] .button.play.button-7 {
+  margin: 0 20px;
+}
+@media (max-width: 1099px) {
+  .slide[data-cid=slide-01-4a72aa1a] .button.play.button-7 {
+    display: block;
+    margin: 30px auto;
+  }
+}
+
+/* Menu Nav (#3) */
+.panel .menu {
+  cursor: pointer;
+}
+
+.panel .menu > li {
+  outline: none;
+  border-radius: 50px;
+  padding: 7px 17px;
+  will-change: background;
+  -webkit-transition: 0.25s background;
+  transition: 0.25s background;
+}
+
+.panel .menu > li:focus,
+.panel .menu > li:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.panel .menu > li .material-icons {
+  vertical-align: bottom;
+}
+
+.dropdown.customDropdown {
+  padding: 10px 0;
+  width: 200px;
+}
+
+.dropdown.customDropdown .menu > li:not(.link),
+.dropdown.customDropdown .menu > li.link a {
+  font-size: 15px;
+  padding: 8px 10px 8px 20px;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+}
+
+.dropdown.customDropdown .menu > li:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.dropdown.customDropdown .material-icons {
+  float: right;
+}

@@ -1,0 +1,111 @@
+/* 
+Compile this file to css/custom_gRypYoFl.css using any SCSS preprocessor. 
+More information here: https://slides.gitbook.io/manual/scss
+*/
+
+@import "mixins.scss"; 
+@import "variables.scss";
+@import "variables-custom.scss";
+
+/* Slide 168 (#1) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-168-821c6fca"] */
+.slide[data-cid="slide-168-821c6fca"]{
+  .img-168{
+    max-width:70%;
+    @include media($phablet, max) {
+      left:unset !important;
+      right:0;
+    }
+  }
+}
+
+/* Clients (#4) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-01-52b20b0b"] */
+.slide[data-cid="slide-01-52b20b0b"]{
+  .flex-68 a {
+    display: inline-block;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    opacity: 0.9;
+    transition: opacity 0.1s ease-in, transform 0.15s cubic-bezier(0.5, 0, 0.25, 2.5);
+    &:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+  &.whiteSlide .tintLogos {
+    filter: brightness(0.2);
+  }
+  &:not(.whiteSlide) .tintLogos {
+    filter: brightness(1.3);
+  }
+}
+
+/* Slide 141 (#5) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-141-37cd4427"] */
+.slide[data-cid="slide-141-37cd4427"]{
+  .box-141-center{
+    @include media($phablet, max) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  .box-141-right{
+    @include media($tablet, min) {
+      margin-top:-100px;
+    }
+  }
+}
+
+/* Enviroment (#8) */
+.slides .slide .background.vimeo iframe {
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    top: initial;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    -webkit-transform-origin: 0%;
+    transform-origin: 0%;
+  }
+
+/* Contact (#9) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-01-675c1a33"] */
+.slide[data-cid="slide-01-675c1a33"]{
+	.button.play.button-7 {
+    margin: 0 20px;
+  }
+  @include media(1100px, max) {
+    .button.play.button-7 {
+      display: block;
+      margin: 30px auto;
+    }
+  }
+}
+
+/* Menu Nav (#10) */
+.panel .menu { cursor:pointer;}
+  .panel .menu > li {
+    outline: none;
+    border-radius: 50px;
+    padding: 7px 17px;
+    will-change: background;
+    -webkit-transition:0.25s background;
+    transition:0.25s background;
+  }
+  .panel .menu > li:focus,
+  .panel .menu > li:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  .panel .menu > li .material-icons {
+    vertical-align: bottom;
+  }
+  .dropdown.customDropdown { padding:10px 0; width: 200px;}
+  .dropdown.customDropdown .menu > li:not(.link),
+  .dropdown.customDropdown .menu > li.link a { font-size: 15px; padding: 8px 10px 8px 20px; cursor: pointer; display: block; text-align: left; }
+  .dropdown.customDropdown .menu > li:hover { background:rgba(0, 0, 0, 0.05);}
+  .dropdown.customDropdown .material-icons {
+    float: right;
+  }
